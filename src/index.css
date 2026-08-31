@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper: #EDE9E0;
+    --paper-2: #E4DFD3;
+    --paper-3: #D8D2C4;
+    --paper-dark: #C9C2B2;
+    --ink: #221F1A;
+    --ink-soft: #5B564C;
+    --ink-muted: #8C867A;
+    --walnut: #8A4E28;
+    --walnut-dark: #6B3B1D;
+    --walnut-light: #A3623B;
+    --blueprint: #243B4A;
+    --blueprint-2: #1B2C38;
+    --blueprint-dark: #121F29;
+    --line-on-blueprint: #C9D8DE;
+    --hair: rgba(34, 31, 26, 0.14);
+    --hair-strong: rgba(34, 31, 26, 0.28);
+    --gold-accent: #C59B27;
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-serif-fraunces {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-mono-plex {
+  font-family: 'IBM Plex Mono', Menlo, Monaco, Consolas, monospace;
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+}
+
+/* Blueprint Grid pattern */
+.blueprint-grid {
+  background-color: var(--blueprint-2);
+  background-image: 
+    linear-gradient(rgba(201, 216, 222, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 216, 222, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(201, 216, 222, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 216, 222, 0.03) 1px, transparent 1px);
+  background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+/* Paper Grid pattern */
+.paper-grid {
+  background-image: 
+    linear-gradient(rgba(34, 31, 26, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 31, 26, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--paper);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--paper-dark);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ink-soft);
+}
