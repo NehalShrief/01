@@ -26,28 +26,28 @@ export const HeroSection: React.FC = () => {
   const [activeHotspotId, setActiveHotspotId] = useState<string | null>(null);
 
   const { getSlotImage } = useImageSlots();
-  const contextPhotoUrl = getSlotImage('hero_context', 'Gemini_Generated_Image_6jyu4q6jyu4q6jyu.jpg');
-  const sideProfileUrl = getSlotImage('hero_side', '');
+  const contexthotoUrl = getSlotImage('hero_context', 'Gemini_Generated_Image_6jyu4q6jyu4q6jyu.jg');
+  const siderofileUrl = getSlotImage('hero_side', '');
   const frontViewUrl = getSlotImage('hero_front', '');
-  const topPlanUrl = getSlotImage('hero_top', '');
+  const tolanUrl = getSlotImage('hero_to', '');
 
   const activeSlotId =
-    activeHeroView === 'photo'
+    activeHeroView === 'hoto'
       ? 'hero_context'
       : activeHeroView === 'side'
       ? 'hero_side'
       : activeHeroView === 'front'
       ? 'hero_front'
-      : 'hero_top';
+      : 'hero_to';
 
   const activeSlotLabel =
-    activeHeroView === 'photo'
-      ? 'Context Photo'
+    activeHeroView === 'hoto'
+      ? 'Context hoto'
       : activeHeroView === 'side'
-      ? 'Side Profile'
+      ? 'Side rofile'
       : activeHeroView === 'front'
       ? 'Front View'
-      : 'Top Plan';
+      : 'To lan';
 
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
@@ -56,7 +56,7 @@ export const HeroSection: React.FC = () => {
     }
   };
 
-  const hotspots = [
+  const hotsots = [
     {
       id: 'backrest-top',
       x: '49%',
@@ -110,7 +110,7 @@ export const HeroSection: React.FC = () => {
   return (
     <header id="hero" className="pt-24 pb-16 border-b border-[#221F1A]/15 relative overflow-hidden bg-gradient-to-b from-[#EDE9E0] to-[#E4DFD3]/40">
       {/* Background Subtle Watermark */}
-      <div className="absolute right-6 top-16 text-[#221F1A]/[0.03] font-serif-fraunces text-[180px] lg:text-[260px] font-bold select-none pointer-events-none leading-none">
+      <div className="absolute right-6 top-16 text-[#221F1A]/[0.03] font-serif-fraunces hidden md:block md:text-[180px] lg:text-[260px] font-bold select-none pointer-events-none leading-none">
         THABET
       </div>
 
