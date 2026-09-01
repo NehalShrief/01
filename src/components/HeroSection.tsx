@@ -56,7 +56,7 @@ export const HeroSection: React.FC = () => {
     }
   };
 
-  const hotpsots = [
+  const hotspots = [
     {
       id: 'backrest-top',
       x: '49%',
