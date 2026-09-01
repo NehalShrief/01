@@ -135,14 +135,14 @@ export const HeroSection: React.FC = () => {
 
         {/* Main Title */}
         <div className="mb-6">
-          <h1 className="font-serif-fraunces text-5xl sm:text-7xl lg:text-8xl font-normal tracking-tight text-[#221F1A] leading-[0.95]">
+          <h1 className="font-serif-fraunces text-4xl sm:text-6xl lg:text-8xl font-normal tracking-tight text-[#221F1A] leading-[0.95]">
             The Wren <br />
             <em className="italic font-light text-[#8A4E28]">Chair</em>
           </h1>
         </div>
 
         {/* Subtitle / Philosophy */}
-        <p className="text-lg md:text-xl text-[#5B564C] max-w-2xl font-normal leading-relaxed mb-10">
+        <p className="text-base md:text-xl text-[#5B564C] max-w-2xl font-normal leading-relaxed mb-10">
           A single-form lounge chair built on a question borrowed from a 1926 monument: what happens when ancient Egyptian monumental mass is asked to hold a living, resting human body.
         </p>
 
