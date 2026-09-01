@@ -26,7 +26,7 @@ export const HeroSection: React.FC = () => {
   const [activeHotspotId, setActiveHotspotId] = useState<string | null>(null);
 
   const { getSlotImage } = useImageSlots();
- const contextPhotoUrl = getSlotImage('hero_context', 'Gemini_Generated_Image_6jyu4q6jyu4q6jyu.jpg');
+ const contextPhotoUrl = 'https://i.ibb.co/gMHxZ5Nw/Gemini-Generated-Image-fdaimdfdaimdfdai.jpg';
   const sideProfileUrl = getSlotImage('hero_side', '');
   const frontViewUrl = getSlotImage('hero_front', '');
   const topPlanUrl = getSlotImage('hero_top', '');
