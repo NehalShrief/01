@@ -17,6 +17,9 @@ export const SlotImageUploader: React.FC<SlotImageUploaderProps> = ({
   variant = 'button',
   onImageLoaded,
 }) => {
+  // إخفاء الأزرار نهائياً من العرض النهائي للموقع
+  return null;
+
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { slots, isUploading, uploadSuccess, uploadImage, resetSlot } = useImageSlots();
 
@@ -33,7 +36,6 @@ export const SlotImageUploader: React.FC<SlotImageUploaderProps> = ({
     if (uploadedUrl && onImageLoaded) {
       onImageLoaded(uploadedUrl);
     }
-    // Reset file input value so user can upload the same file again if desired
     if (fileInputRef.current) {
       fileInputRef.current.value = '';
     }
