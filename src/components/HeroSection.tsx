@@ -252,7 +252,7 @@ export const HeroSection: React.FC = () => {
                     src={contextPhotoUrl}
                     alt="The Wren Chair in-situ architectural context with resting posture"
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover rounded-xl"
+                    className="w-full h-full object-contain rounded-xl"
                     onError={(e) => {
                       const target = e.currentTarget;
                       if (!target.src.includes('unsplash')) {
