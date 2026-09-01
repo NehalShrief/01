@@ -26,25 +26,25 @@ export const HeroSection: React.FC = () => {
   const [activeHotspotId, setActiveHotspotId] = useState<string | null>(null);
 
   const { getSlotImage } = useImageSlots();
-  const contexthotoUrl = getSlotImage('hero_context', 'Gemini_Generated_Image_6jyu4q6jyu4q6jyu.jg');
-  const siderofileUrl = getSlotImage('hero_side', '');
+ const contextPhotoUrl = getSlotImage('hero_context', 'Gemini_Generated_Image_6jyu4q6jyu4q6jyu.jpg');
+  const sideProfileUrl = getSlotImage('hero_side', '');
   const frontViewUrl = getSlotImage('hero_front', '');
-  const tolanUrl = getSlotImage('hero_to', '');
+  const topPlanUrl = getSlotImage('hero_top', '');
 
   const activeSlotId =
-    activeHeroView === 'hoto'
+    activeHeroView === 'photo'
       ? 'hero_context'
       : activeHeroView === 'side'
       ? 'hero_side'
       : activeHeroView === 'front'
       ? 'hero_front'
-      : 'hero_to';
+      : 'hero_top';
 
   const activeSlotLabel =
-    activeHeroView === 'hoto'
-      ? 'Context hoto'
+    activeHeroView === 'photo'
+      ? 'Context Photo'
       : activeHeroView === 'side'
-      ? 'Side rofile'
+      ? 'Side Profile'
       : activeHeroView === 'front'
       ? 'Front View'
       : 'To lan';
